@@ -3,5 +3,13 @@
 }
 
 body {
-    background-color: red;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #464544;
+    color: #fff;
+
+    display: flex;
+    justify-content: space-around
 }
