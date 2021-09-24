@@ -1,19 +1,53 @@
-font-family: 'Playfair Display', serif; 
-font-family: 'Montserrat', sans-serif;
-
-
-*{
-    text-align: center;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #fff;
+    font-family: 'Playfair Display', serif
 }
 
 footer {
     background-color: #464544;
     color: #fff;
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*CLASES GENERALES*/
+
+.centrar-texto {
+    text-align: center;
+}
+
+
+
+/*INICIO*/
+/*Seccion ¿Por qué elegir una Mija?*/
+
+.contenedor-pregunta {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.tamanio-caracteristica {
+    width: 200px;
+}
+
+/*seccion Proposito*/
+
+.contenedor-porposito {
+    margin: 20px 100px 100px 150px;
+    display: flex;
+    align-items: center;
+}
+
+.texto-proposito {
+    padding-left: 150px;
+}
