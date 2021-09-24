@@ -142,6 +142,24 @@ ul li a {
     padding-left: 150px;
 }
 
+/*Formulario*/
+
+.contacto{
+    padding: 50px;
+}
+
+.formulario {
+    display: flex;
+    
+  }
+  
+  .my-form {
+    
+    text-align: left;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
 
 
 /*Footer*/
