@@ -3,17 +3,13 @@
     padding: 0;
 }
 
+
 body {
     background-color: #fff;
     font-family: 'Playfair Display', serif;
 }
 
-footer {
-    background-color: #464544;
-    color: #fff;
-    display: flex;
-    justify-content: space-around;
-}
+
 
 h2 {
     font-style: normal;
@@ -46,9 +42,30 @@ p {
 
 
 /*INICIO*/
+
+/*NavBar*/
+
+.navbar {
+    background-color: white;
+  }
+
+.navbar-nav {
+    justify-content: center;
+    width: 90%;
+    
+  }
+
+.navbar i {
+  color: black;
+  opacity: 0.4;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 0em 0.3em;
+}
+
 /*Seccion Slogan*/
 .imagen-slogan {
-    background-image: url("../Mija/imgs/slogan.jpg");
+    background-image: url("/imgs/slogan.jpg");
     width: 100%;
     height: 641px;
     background-position: center;
@@ -91,4 +108,14 @@ p {
 .texto-proposito {
     padding-left: 150px;
 
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: #464544;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
 }
