@@ -142,6 +142,36 @@ ul li a {
     padding-left: 150px;
 }
 
+/*seccion Producto*/
+
+.texto-producto{
+    padding-left: 110px;  
+}
+
+.card{
+    position: relative;
+    width: 360px;
+    height: 416px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.divBtnProductos{
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+
+.btnProductos{
+    width: 275px;
+    height: 62px;
+    color: #fff;
+    background-color: #212529;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    line-height: 29px;
+}
+
 /*Formulario*/
 
 .contacto{
