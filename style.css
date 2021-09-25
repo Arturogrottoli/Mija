@@ -159,6 +159,17 @@ ul li a {
     padding-right: 15px;
 }
 
+.btnCard{
+    background-color: white;
+    color: black;
+    position: absolute;
+    z-index: 1;
+    width: 140.1px;
+    height: 49px;
+    margin: 300px 0px 100px 100px;
+    
+}
+
 .divBtnProductos{
     align-items: center;
     text-align: center;
