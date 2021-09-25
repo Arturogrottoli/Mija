@@ -143,6 +143,9 @@ ul li a {
 }
 
 /*seccion Producto*/
+.container-fluid .row {
+    padding-left: 25px;
+}
 
 .texto-producto{
     padding-left: 110px;  
@@ -156,17 +159,35 @@ ul li a {
     padding-right: 15px;
 }
 
+.div-btn-rombos {
+    position:absolute;
+    margin:300px 0 0 120px;
+}
+
+.btn-rombos {
+    width: 140px;
+    height: 49px;
+    color: black;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+
+
 .divBtnProductos{
     align-items: center;
     text-align: center;
     margin: 50px;
 }
 
-.btnProductos{
+#btnProductos{
     width: 275px;
     height: 62px;
     color: #fff;
-    background-color: #212529;
+    background-color: black;
     font-family: 'Montserrat', sans-serif;
     font-size: 23px;
     line-height: 29px;
