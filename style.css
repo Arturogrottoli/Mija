@@ -75,6 +75,7 @@ ul li a {
     line-height: 20px;
 }
 
+
 /*Seccion Portada*/
 .contenedor-portada {
     margin: 40px 0 100px 100px;
@@ -91,58 +92,7 @@ ul li a {
 }
 
 
-
-/*Seccion Slogan*/
-.imagen-slogan {
-    background-image: url("imgs/slogan.jpg");
-    width: 100%;
-    height: 641px;
-    background-position: center;
-    background-size: cover;
-    
-}
-
-.texto-slogan {
-    color: #fff;
-    font-weight: bold;
-    font-size: 45px;
-    line-height: 50px;
-    text-align: center;
-    padding-top: 250px;
-}
-
-
-
-/*Seccion ¿Por qué elegir una Mija?*/
-
-.contenedor-pregunta {
-    margin-top: 50px;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-}
-.tamanio-caracteristica {
-    width: 200px;
-}
-
-.tamanio-caracteristica p {
-    font-size: 19px;
-}
-
-/*seccion Proposito*/
-
-.contenedor-porposito {
-    background-color: #FCFAF6;
-    margin: 20px 100px 100px 150px;
-    display: flex;
-    align-items: center;
-}
-
-.texto-proposito {
-    padding-left: 150px;
-}
-
-/*seccion Producto*/
+/*Seccion Producto*/
 .container-fluid .row {
     padding-left: 25px;
 }
@@ -184,12 +134,96 @@ ul li a {
     font-family: 'Montserrat', sans-serif;
     font-size: 23px;
     line-height: 29px;
+    font-weight: bold;
+}
+
+
+/*Seccion Slogan*/
+.imagen-slogan {
+    background-image: url("imgs/slogan.jpg");
+    width: 100%;
+    height: 541px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 60px;
+}
+
+.texto-slogan {
+    color: #fff;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 250px;
+}
+
+
+
+/*Seccion ¿Por qué elegir una Mija?*/
+
+.contenedor-pregunta {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.tamanio-caracteristica {
+    width: 200px;
+}
+
+.tamanio-caracteristica p {
+    font-size: 19px;
+}
+
+/*Seccion Proposito*/
+
+.contenedor-porposito {
+    background-color: #FCFAF6;
+    margin: 20px 100px 100px 150px;
+    display: flex;
+    align-items: center;
+}
+
+.imgProposito {
+    width: 100%;
+}
+
+.divTexto-proposito {
+    padding-left: 150px;
+}
+
+.btnProposito {
+    width: 145px;
+    height: 62px;
+    color: #fff;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    line-height: 29px;
+    font-weight: bold; 
+}
+
+
+/*CONTACTO*/
+
+.contenedor-contacto {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.mapa {
+    width: 476px;
+    height: 323px;
+    
 }
 
 /*Formulario*/
 
 .contacto{
     padding: 50px;
+    text-align: center;
 }
 
 .formulario {
@@ -206,10 +240,12 @@ ul li a {
 
 
 
+
+
 /*Footer*/
 
 footer {
-    background-color: #464544;
+    background-color: black;
     color: #fff;
     display: flex;
     justify-content: space-around;
