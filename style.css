@@ -163,7 +163,12 @@ ul li a {
 .card1{
     width: 552px;
     height: 434px;
+    margin: 0px 35px;
       
+}
+
+.pcard1{
+    margin: 0px 35px;
 }
 
 /*Seccion ¿Por qué elegir una Mija?*/
