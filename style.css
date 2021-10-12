@@ -368,3 +368,33 @@ footer p {
 .div-footer{
     width: 220px;
 }
+
+
+
+/* Estilos del botón */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: whitesmoke;
+    color: black;
+    outline: 0;
+    border: 0,01;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.scroll-top-btn:hover {
+    background-color: black;
+    color: white
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
