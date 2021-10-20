@@ -407,6 +407,15 @@ footer p {
     width: 220px;
 }
 
+.sinDecoracion {
+    text-decoration: none;
+    color: white;
+}
+
+.sinDecoracion:hover {
+    color: white;
+}
+
 
 /* Estilos del botón */
 
