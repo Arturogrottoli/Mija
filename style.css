@@ -371,8 +371,12 @@ ul li a {
 /*Formulario*/
 
 .contacto {
-    padding: 100px;
+    padding: 60px;
     text-align: center;
+}
+
+.mensaje{
+    padding: 0 50px;
 }
 
 .formulario {
