@@ -375,8 +375,8 @@ ul li a {
     text-align: center;
 }
 
-.mensaje{
-    padding: 0 50px;
+.mensaje {
+    padding: 0 65px;
 }
 
 .formulario {
@@ -387,6 +387,29 @@ ul li a {
     text-align: left;
     padding: 10px;
     margin: 0 auto;
+}
+
+.form-control {
+    width: 134%;
+    border: 1px solid #999a9b;
+    border-radius: 0;
+}
+
+.form-div {
+    font-family: Montserrat;
+    font-size: 19px;
+    line-height: 29px;
+}
+
+.btn-dark {
+    background-color: black !important;
+    width: 124px;
+    height: 52px;
+    margin-top: 25px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 29px;
 }
 
 
