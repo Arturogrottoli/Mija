@@ -346,7 +346,7 @@ ul li a {
 
 .mapa {
     width: 476px;
-    height: 323px;
+    height: 388px;
 }
 
 .redes-contacto {
@@ -390,9 +390,13 @@ ul li a {
 }
 
 .form-control {
-    width: 134%;
+    width: 464px;
     border: 1px solid #999a9b;
     border-radius: 0;
+}
+
+.tamanioMensaje {
+    width: 464px;
 }
 
 .form-div {
