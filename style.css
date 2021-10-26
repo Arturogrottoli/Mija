@@ -503,3 +503,17 @@ footer p {
     opacity: 0;
     visibility: hidden;
 }
+
+
+/*Contacto Whatsapp*/
+
+#app-whatsapp{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 60px;
+    z-index: 1;
+    font-size: 63px;
+    color: green;
+
+}

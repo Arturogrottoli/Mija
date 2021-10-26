@@ -8,8 +8,7 @@ function scrollTopButton(btn){
     $(window).scroll(function(){
         let scrollTop = $(this).scrollTop();
         
-        //Operador ternario sustituyendo al if{} else{} 
-        scrollTop > 400 ? $ScrollBtn.removeClass('hidden') : $ScrollBtn.addClass('hidden');
+                scrollTop > 400 ? $ScrollBtn.removeClass('hidden') : $ScrollBtn.addClass('hidden');
     })
 
     $ScrollBtn.click(function(){
