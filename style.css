@@ -251,7 +251,11 @@ ul li a {
 }
 
 .descripcion-coleccion h2 {
-    margin-bottom: 50px;
+    margin-bottom: 0;
+}
+
+.titulo-coleccion {
+    margin-bottom: 70px;
 }
 
 
@@ -443,6 +447,14 @@ ul li a {
     margin: 60px 122px 60px 122px;
 }
 
+.contenedor-beneficios h2 {
+    margin-bottom: 60px;
+}
+
+.contenedor-beneficios h3 {
+    margin-top: 60px;
+}
+
 
 /*FOOTER*/
 
@@ -507,7 +519,7 @@ footer p {
 
 /*Contacto Whatsapp*/
 
-#app-whatsapp{
+#app-whatsapp {
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -515,5 +527,17 @@ footer p {
     z-index: 1;
     font-size: 63px;
     color: green;
+}
 
+
+/* RESPONSIVE MOBILE */
+
+@media (max-width: 430px) {
+    /* General */
+    .smartNo {
+        display: none;
+    }
+    .smartTamanioImg {
+        width: 70%;
+    }
 }
