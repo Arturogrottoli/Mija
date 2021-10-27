@@ -22,6 +22,20 @@ function scrollTopButton(btn){
 
 
 
+
+
+
+//Funcion mostrar mensaje
+
+
+
+let mostrarMensaje = () =>{
+   event.preventDefault()
+   swal("¿Formas de adquirir este modelo?", "Podés consultar mediante el link de whatsapp de esta pagina o bien enviarnos un mensaje desde el formulario de contacto.");
+}
+
+
+
 /*Funcion Formulario*/
 const $form = document.querySelector('#form')
 $form.addEventListener('submit', handleSubmit)
@@ -46,5 +60,3 @@ async function handleSubmit(event) {
     
   }
 }
-
-
