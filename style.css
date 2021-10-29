@@ -112,7 +112,7 @@ ul li a {
 
 .contenedor-coleccion {
     background-color: #FCFAF6;
-    margin: 140px 100px 150px 100px;
+    margin: 140px 0px 150px 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -131,6 +131,7 @@ ul li a {
     font-size: 23px;
     line-height: 29px;
     font-weight: bold;
+    border: none;
 }
 
 
@@ -217,6 +218,7 @@ ul li a {
     font-size: 23px;
     line-height: 29px;
     font-weight: bold;
+    border: none;
 }
 
 
@@ -281,6 +283,7 @@ ul li a {
     font-size: 23px;
     line-height: 29px;
     font-weight: bold;
+    border: none;
 }
 
 
@@ -557,15 +560,21 @@ footer p {
     .paddingIzquierdo {
         padding-left: 5px;
     }
+    .parrafo-portada {
+        font-size: 23px;
+        line-height: 29px;
+        padding-top: 75px;
+        padding-left: 63px;
+    }
     /*Seccion coleccion*/
     .contenedor-coleccion {
-        margin: 36px 8px 36px 18px;
+        margin: 36px 0px 36px 0px;
     }
     .divTexto-coleccion {
         width: 375px;
         padding-left: 10px;
     }
-    .imagen-coleccion {
+    .imagen-coleccionSmart {
         width: 178px;
     }
     .btnColeccion {
@@ -585,6 +594,22 @@ footer p {
         margin-left: 70px;
         width: 251px;
     }
+    /*Seccion Caracteristicas*/
+    .contenedor-caracteristicas {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tamanio-caracteristica {
+        width: 199px;
+    }
+    .tamanio-caracteristica p {
+        font-size: 11px;
+    }
     /*Seccion Instrucciones uso*/
     .card1 {
         width: 95%;
@@ -592,6 +617,41 @@ footer p {
         margin: 0px 18px 0px 8px;
     }
     .pcard1 {
-        margin: 0px 35px;
+        margin: 0px 10px;
+    }
+    /*Seccion Proposito*/
+    .contenedor-porposito {
+        background-color: #FCFAF6;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 274px;
+        width: 100%;
+    }
+    .divTexto-proposito {
+        padding-left: 10px;
+    }
+    .divTexto-proposito p {
+        width: 159px;
+    }
+    .btnProposito {
+        width: 69px;
+        height: 24px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .imagen-propositoSmart {
+        width: 159px;
+    }
+    /*FOOTER*/
+    footer h2 {
+        font-size: 12px;
+    }
+    footer p {
+        font-size: 7px;
+    }
+    .div-footer {
+        width: 80px;
     }
 }
