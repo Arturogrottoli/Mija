@@ -659,7 +659,7 @@ footer p {
     .img-portada-coleccion {
         background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(imgs/coleccion1.jpeg);
         height: 182px;
-        width: 414px;
+        width: 100%;
         background-size: cover;
     }
     .texto-portada-coleccion {
