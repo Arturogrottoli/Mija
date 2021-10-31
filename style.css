@@ -555,7 +555,7 @@ footer p {
     /* INICIO*/
     /* Seccion portada */
     .smartTamanioImg {
-        width: 186px;
+        width: 206px;
     }
     .paddingIzquierdo {
         padding-left: 3px;
@@ -653,5 +653,62 @@ footer p {
     }
     .div-footer {
         width: 80px;
+    }
+    /*COLECCION*/
+    /*Portada*/
+    .img-portada-coleccion {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(imgs/coleccion1.jpeg);
+        height: 182px;
+        width: 414px;
+        background-size: cover;
+    }
+    .texto-portada-coleccion {
+        font-size: 18px;
+        line-height: 70px;
+        text-align: center;
+        padding-top: 100px;
+        margin-left: 135px;
+        width: 83px;
+    }
+    /* Descripcion */
+    .descripcion-coleccion {
+        margin: 10px 28px 10px 20px;
+        width: 90%;
+        height: 339px;
+    }
+    .descripcion-coleccion h2 {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .titulo-coleccion {
+        margin-bottom: 0px;
+    }
+    .titulo-coleccion p {
+        text-align: center;
+    }
+    /* Coleccion 1,2 y 3 */
+    .contenedor-coleccion-todos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 247px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .divTexto-coleccion-todos {
+        width: 159px;
+    }
+    .btnMasInfo {
+        width: 94px;
+        height: 21px;
+        color: #fff;
+        background-color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        line-height: 29px;
+        font-weight: bold;
+        border: none;
     }
 }
