@@ -835,7 +835,7 @@ footer p {
     }
     .btnMasInfo {
         width: 94px;
-        height: 21px;
+        height: 35px;
         color: #fff;
         background-color: black;
         font-family: 'Montserrat', sans-serif;
@@ -843,5 +843,33 @@ footer p {
         line-height: 29px;
         font-weight: bold;
         border: none;
+    }
+
+    /* Beneficios */
+
+    .contenedor-beneficios {
+        margin: 30px 18px 30px 18px;
+        width: 339px;
+    }
+    .contenedor-beneficios h2 {
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 18px;
+        line-height: 50px;
+    }
+    
+    .contenedor-beneficios p {
+        font-size: 11px;
+        line-height: 15px;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .imagen-beneficios {
+        
+        height: 219px;
+        width: 100%;
+        background-size: cover;
+        background-position: right;
     }
 }
