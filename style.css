@@ -1,498 +1,83 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #fff;
-    font-family: 'Playfair Display', serif;
-}
-
 h2 {
-    font-style: normal;
     font-weight: bold;
-    font-size: 39px;
-    line-height: 70px;
+    font-size: 2.4375rem;
+    line-height: 4.375rem;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 600;
-    font-size: 25px;
-    line-height: 29px;
+    font-size: 1.5625rem;
+    line-height: 1.8125rem;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 23px;
-    line-height: 29px;
+    font-size: 1.4375rem;
+    line-height: 1.8125rem;
 }
 
-
-/*CLASES GENERALES*/
-
-.centrar-texto {
-    text-align: center;
-}
-
-.noMostrar {
-    display: none;
-}
-
-.sinDecoracionX {
-    text-decoration: none;
-    color: black;
-}
-
-.sinDecoracionX:hover {
-    color: black;
-}
-
-
-/*INICIO*/
-
-
-/*NavBar*/
-
-.bg-light {
-    background-color: white !important;
-}
-
-.navbar-nav {
-    justify-content: center;
-    width: 90%;
-}
-
-.navbar i {
-    color: black;
-    opacity: 0.4;
-    text-decoration: none;
-    font-size: 1.5em;
-    padding: 0em 0.3em;
-}
-
-ul li {
-    padding-left: 45px;
-}
-
-ul li a {
-    color: black !important;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 20px;
-}
-
-
-/*Seccion Portada*/
-
-.contenedor-portada {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.img-portada {
-    width: 443px;
-}
-
-.parrafo-portada {
+.hero-title {
     color: white;
     font-weight: 600;
-    font-size: 65px;
-    line-height: 70px;
+    font-size: 4.0625rem;
+    line-height: 4.375rem;
     position: absolute;
-    z-index: 1;
-    padding-top: 500px;
-    padding-left: 140px;
+    z-index: 10;
+    padding-top: 31.25rem;
+    padding-left: 8.75rem;
 }
 
-
-/*Seccion coleccion*/
-
-.contenedor-coleccion {
-    background-color: #FCFAF6;
-    margin: 140px 0px 150px 0px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.divTexto-coleccion {
-    width: 535px;
-}
-
-.btnColeccion {
-    width: 145px;
-    height: 62px;
-    color: #fff;
-    background-color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 23px;
-    line-height: 29px;
-    font-weight: bold;
-    border: none;
-}
-
-
-/*Seccion Slogan*/
-
-.imagen-slogan {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imgs/slogan.jpeg");
+.slogan-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imgs/slogan.jpeg");
     width: 100%;
-    height: 541px;
-    background-position: unset;
+    height: 33.8125rem;
     background-size: cover;
-    margin-bottom: 60px;
-}
-
-.texto-slogan {
-    color: #fff;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 45px;
-    text-align: center;
-    padding-top: 250px;
-    margin-left: 355px;
-    width: 650px;
-}
-
-
-/*Seccion Caracteristicas*/
-
-.contenedor-caracteristicas {
-    margin-top: 50px;
-    margin-bottom: 120px;
-    text-align: center;
+    background-position: center;
+    margin-bottom: 3.75rem;
     display: flex;
-    justify-content: space-evenly;
-}
-
-.tamanio-caracteristica {
-    width: 372px;
-}
-
-.tamanio-caracteristica p {
-    font-size: 19px;
-}
-
-
-/*Seccion Instrucciones uso*/
-
-.card1 {
-    width: 552px;
-    height: 434px;
-    margin: 0px 35px;
-}
-
-.pcard1 {
-    margin: 0px 35px;
-}
-
-
-/*Seccion Proposito*/
-
-.contenedor-porposito {
-    background-color: #FCFAF6;
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
     align-items: center;
-    height: 707px;
+    justify-content: center;
 }
 
-.divTexto-proposito {
-    padding-left: 100px;
-}
-
-.divTexto-proposito p {
-    width: 535px;
-}
-
-.btnProposito {
-    width: 145px;
-    height: 62px;
-    color: #fff;
-    background-color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 23px;
-    line-height: 29px;
-    font-weight: bold;
-    border: none;
-}
-
-
-/*COLECCION*/
-
-
-/*Portada*/
-
-.img-portada-coleccion {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(imgs/coleccion1.jpeg);
-    height: 650px;
-    width: 100%;
-    background-size: cover;
-}
-
-.texto-portada-coleccion {
+.slogan-text {
     color: white;
     font-weight: 600;
-    font-size: 50px;
-    line-height: 70px;
+    font-size: 2.5rem;
+    line-height: 2.8125rem;
     text-align: center;
-    padding-top: 430px;
-    margin-left: 524px;
-    width: 312px;
+    max-width: 40.625rem;
+    padding: 0 1rem;
 }
 
-
-/* Descripcion */
-
-.descripcion-coleccion {
-    margin: 60px 122px 150px 122px;
-}
-
-.descripcion-coleccion h2 {
-    margin-bottom: 0;
-}
-
-.titulo-coleccion {
-    margin-bottom: 70px;
-}
-
-
-/* Coleccion 1,2 y 3 */
-
-.contenedor-coleccion-todos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 150px;
-}
-
-.divTexto-coleccion-todos {
-    width: 535px;
-}
-
-.btnMasInfo {
-    width: 252px;
-    height: 62px;
-    color: #fff;
+.btn-collection, .btn-philosophy, .btn-more-info {
+    color: white;
     background-color: black;
     font-family: 'Montserrat', sans-serif;
-    font-size: 23px;
-    line-height: 29px;
+    font-size: 1.4375rem;
+    line-height: 1.8125rem;
     font-weight: bold;
     border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    padding: 1rem 2rem;
 }
 
-
-/*NOSOTRAS*/
-
-
-/*Seccion Detrás de Mija*/
-
-.contenerdor-DetrasDeMija {
-    margin: 60px 122px 60px 122px;
+.btn-collection:hover, .btn-philosophy:hover, .btn-more-info:hover {
+    opacity: 0.8;
 }
 
-.contenerdor-DetrasDeMija h2 {
-    font-size: 65px;
+.instruction-card {
+    width: 34.5rem;
+    height: 27.125rem;
+    object-fit: cover;
 }
 
-.contenerdor-DetrasDeMija p {
-    font-size: 19px;
-    line-height: 29px;
+.instruction-title {
+    margin: 1rem 2.1875rem;
 }
 
-.contenedor-parrafoUno {
-    margin: 50px 120px 0 120px;
-    text-align: center;
-}
-
-.contenedor-parrafoDos {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
-
-.divContenedor-parrafoDos {
-    width: 393px;
-}
-
-.divContenedor-parrafoDos p {
-    text-align: center;
-    margin-top: 30px;
-}
-
-
-/*Seccion Filosofia*/
-
-.contenedor-filosofia {
-    margin: 90px 119px 90px 122px;
-}
-
-.contenedor-filosofia h2 {
-    font-size: 65px;
-    margin-bottom: 50px;
-}
-
-.contenedor-filosofia p {
-    font-size: 19px;
-    line-height: 29px;
-}
-
-
-/*Seccion Imagen Abajo-Slogan*/
-
-.imagen-nosotras {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imgs/nosotras3.jpeg);
-    height: 420px;
-    width: 100%;
-    background-size: cover;
-}
-
-.texto-imagen-nosotras {
-    color: white;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 29px;
-    text-align: center;
-    padding-top: 191px;
-}
-
-
-/*CONTACTO*/
-
-.contenedor-contacto {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 60px;
-}
-
-.mapa {
-    width: 476px;
-    height: 388px;
-}
-
-.redes-contacto {
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-.redes-contacto p {
-    font-weight: 600;
-    size: 25px;
-    line-height: 29px;
-}
-
-.redes-contacto i {
-    color: black;
-    text-decoration: none;
-    font-size: 1.5em;
-    padding: 0em 0.3em;
-}
-
-
-/*Formulario*/
-
-.contacto {
-    padding: 60px;
-    text-align: center;
-}
-
-.mensaje {
-    padding: 0 65px;
-}
-
-.formulario {
-    display: flex;
-}
-
-.my-form {
-    text-align: left;
-    padding: 10px;
-    margin: 0 auto;
-}
-
-.form-control {
-    width: 464px;
-    border: 1px solid #999a9b;
-    border-radius: 0;
-}
-
-.tamanioMensaje {
-    width: 464px;
-}
-
-.form-div {
-    font-family: Montserrat;
-    font-size: 19px;
-    line-height: 29px;
-}
-
-.btn-dark {
-    background-color: black !important;
-    width: 124px;
-    height: 52px;
-    margin-top: 25px;
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 23px;
-    line-height: 29px;
-}
-
-
-/* BENEFICIOS DEL PORTEO */
-
-.contenedor-beneficios {
-    margin: 60px 122px 60px 122px;
-}
-
-.contenedor-beneficios h2 {
-    margin-bottom: 60px;
-}
-
-.contenedor-beneficios h3 {
-    margin-top: 60px;
-}
-
-
-/*FOOTER*/
-
-footer {
-    background-color: black;
-    color: #fff;
-    display: flex;
-    justify-content: space-around;
-}
-
-footer h2 {
-    font-size: 25px;
-}
-
-footer p {
-    font-size: 14px;
-}
-
-.div-footer {
-    width: 220px;
-}
-
-.sinDecoracion {
-    text-decoration: none;
-    color: white;
-}
-
-.sinDecoracion:hover {
-    color: white;
-}
-
-
-/* Estilos del botón */
-
-.scroll-top-btn {
+.scroll-top-button {
     position: fixed;
     bottom: 1vh;
     right: 1vw;
@@ -503,373 +88,78 @@ footer p {
     font-weight: bold;
     background-color: whitesmoke;
     color: black;
-    outline: 0;
-    border: 0, 01;
+    border: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
+    z-index: 50;
 }
 
-.scroll-top-btn:hover {
+.scroll-top-button:hover {
     background-color: black;
-    color: white
+    color: white;
 }
 
-.hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-
-/*Contacto Whatsapp*/
-
-#app-whatsapp {
+#whatsapp-float {
     position: fixed;
     right: 10px;
     bottom: 10px;
     width: 60px;
-    z-index: 1;
-    font-size: 63px;
-    color: green;
+    z-index: 40;
+    font-size: 3.9375rem;
+    color: #25D366;
+    transition: transform 0.3s;
 }
 
+#whatsapp-float:hover {
+    transform: scale(1.1);
+}
 
-/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.4375rem;
+        line-height: 1.8125rem;
+        padding-top: 4.6875rem;
+        padding-left: 3.9375rem;
+    }
 
-@media (max-width: 581px) {
-    /* General */
-    .smartNo {
-        display: none;
+    .slogan-background {
+        height: 10.4375rem;
     }
-    p {
-        font-size: 11px;
-        line-height: 15px;
+
+    .slogan-text {
+        font-size: 0.9375rem;
+        line-height: 1.25rem;
+        max-width: 15.6875rem;
     }
-    h2 {
-        font-size: 18px;
-        line-height: 50px;
-    }
-    h3 {
-        font-size: 15px;
-        line-height: 29px;
-    }
-    /* INICIO*/
-    /* Seccion portada */
-    .smartTamanioImg {
-        width: 206px;
-    }
-    .paddingIzquierdo {
-        padding-left: 3px;
-    }
-    .parrafo-portada {
-        font-size: 23px;
-        line-height: 29px;
-        padding-top: 75px;
-        padding-left: 63px;
-    }
-    /*Seccion coleccion*/
-    .contenedor-coleccion {
-        margin: 36px 0px 36px 0px;
-    }
-    .divTexto-coleccion {
-        width: 375px;
-        padding-left: 10px;
-    }
-    .imagen-coleccionSmart {
-        width: 178px;
-    }
-    .btnColeccion {
-        width: 69px;
-        height: 24px;
-        font-size: 10px;
-        line-height: 15px;
-    }
-    /*Seccion Slogan*/
-    .imagen-slogan {
-        height: 167px;
-    }
-    .texto-slogan {
-        font-size: 15px;
-        line-height: 20px;
-        padding-top: 45px;
-        margin-left: 70px;
-        width: 251px;
-    }
-    /*Seccion Caracteristicas*/
-    .contenedor-caracteristicas {
-        margin-top: 50px;
-        margin-bottom: 20px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .tamanio-caracteristica {
-        width: 199px;
-    }
-    .tamanio-caracteristica p {
-        font-size: 11px;
-    }
-    /*Seccion Instrucciones uso*/
-    .card1 {
+
+    .instruction-card {
         width: 95%;
-        height: 266px;
-        margin: 0px 18px 0px 8px;
-    }
-    .pcard1 {
-        margin: 0px 10px;
-    }
-    /*Seccion Proposito*/
-    .contenedor-porposito {
-        background-color: #FCFAF6;
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 274px;
-        width: 100%;
-    }
-    .divTexto-proposito {
-        padding-left: 10px;
-    }
-    .divTexto-proposito p {
-        width: 159px;
-    }
-    .btnProposito {
-        width: 75px;
-        height: 28px;
-        font-size: 10px;
-        line-height: 15px;
-    }
-    .imagen-propositoSmart {
-        width: 159px;
-    }
-    /*NOSOTRAS*/
-    .contenerdor-DetrasDeMija {
-        margin: 30px 18px 30px 18px;
-        width: 339px;
-    }
-    .contenerdor-DetrasDeMija h2 {
-        margin-bottom: 0;
-        text-align: center;
-        font-size: 18px;
-        line-height: 50px;
-    }
-    .contenedor-parrafoUno {
-        height: 157px;
-        width: 339px;
-        margin: 0 0 0 0;
-    }
-    .contenedor-parrafoUno p {
-        font-size: 11px;
-        line-height: 15px;
-        margin-top: 0;
-        margin-bottom: 1rem;
-    }
-    .contenedor-parrafoDos {
-        display: flex;
-        flex-direction: column;
-        justify-content: none;
-        margin-top: 10px;
-        margin-bottom: 40px;
-    }
-    .divContenedor-parrafoDos {
-        width: 100%;
-    }
-    .divContenedor-parrafoDos img {
-        width: 339px;
-        height: 371px;
-    }
-    .divContenedor-parrafoDos p {
-        font-size: 11px;
-        line-height: 20px;
-    }
-    .div-parrafoFinal p {
-        height: 157px;
-        width: 350px;
-    }
-    .div-parrafoFinal p {
-        font-size: 11px;
-        line-height: 15px;
-        margin-top: 0;
-        margin-bottom: 1rem;
-    }
-    /*Seccion Filosofia*/
-    .contenedor-filosofia {
-        height: 756px;
-        width: 339px;
-        margin: 0 0 0 20px;
-    }
-    .contenedor-filosofia h2 {
-        text-align: center;
-        font-size: 18px;
-        line-height: 50px;
-        margin-bottom: 10px;
-    }
-    .contenedor-filosofia p {
-        font-size: 11px;
-        line-height: 15px;
-        margin-top: 0;
-        margin-bottom: 1rem;
-    }
-    /*Seccion Imagen Abajo-Slogan*/
-    .imagen-nosotras {
-        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imgs/nosotras3.jpeg);
-        height: 219px;
-        width: 100%;
-        background-size: cover;
-        background-position: right;
-    }
-    .texto-imagen-nosotras {
-        color: white;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 8px;
-        text-align: center;
-        padding-top: 93px;
-    }
-    /*CONTACTO*/
-    .contenedor-contacto {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
-    .mensaje {
-        width: 195px;
-        height: 29px;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 29px;
-        padding: 0;
-        margin-top: 30px;
-        margin-left: 85px;
-    }
-    .form-div {
-        text-align: center;
-    }
-    .my-form {
-        margin-left: 10px;
-    }
-    .form-control {
-        width: 327px;
-        border: 1px solid #999a9b;
-        border-radius: 0;
-    }
-    .tamanioMensaje {
-        width: 327px;
-    }
-    .div-botonFormContactoSmart {
-        margin-left: 40%;
-    }
-    .btn-dark {
-        width: 92px;
-        height: 29px;
-        margin-top: 25px;
-        font-size: 10px;
-        line-height: 29px;
-    }
-    .div-infoSmart {
-        margin-left: 25px;
-        margin-bottom: 50px;
-        margin-top: 30px;
-    }
-    .mapa {
-        width: 100%;
-        height: 255px;
-    }
-    /*FOOTER*/
-    footer h2 {
-        font-size: 12px;
-    }
-    footer p {
-        font-size: 7px;
-    }
-    .div-footer {
-        width: 80px;
-    }
-    /*COLECCION*/
-    /*Portada*/
-    .img-portada-coleccion {
-        background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(imgs/coleccion1.jpeg);
-        height: 182px;
-        width: 100%;
-        background-size: cover;
-    }
-    .texto-portada-coleccion {
-        font-size: 18px;
-        line-height: 70px;
-        text-align: center;
-        padding-top: 100px;
-        margin-left: 135px;
-        width: 83px;
-    }
-    /* Descripcion */
-    .descripcion-coleccion {
-        margin: 10px 28px 10px 20px;
-        width: 90%;
-        height: 339px;
-    }
-    .descripcion-coleccion h2 {
-        margin-bottom: 0;
-        text-align: center;
-    }
-    .titulo-coleccion {
-        margin-bottom: 0px;
-    }
-    .titulo-coleccion p {
-        text-align: center;
-    }
-    /* Coleccion 1,2 y 3 */
-    .contenedor-coleccion-todos {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-bottom: 10px;
-        width: 100%;
-        height: 247px;
-        margin-left: 4px;
-        margin-right: 4px;
-    }
-    .divTexto-coleccion-todos {
-        width: 159px;
-    }
-    .btnMasInfo {
-        width: 94px;
-        height: 35px;
-        color: #fff;
-        background-color: black;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 10px;
-        line-height: 29px;
-        font-weight: bold;
-        border: none;
+        height: 16.625rem;
+        margin: 0 1.125rem;
     }
 
-    /* Beneficios */
-
-    .contenedor-beneficios {
-        margin: 30px 18px 30px 18px;
-        width: 339px;
-    }
-    .contenedor-beneficios h2 {
-        margin-bottom: 0;
-        text-align: center;
-        font-size: 18px;
-        line-height: 50px;
-    }
-    
-    .contenedor-beneficios p {
-        font-size: 11px;
-        line-height: 15px;
-        margin-top: 0;
-        margin-bottom: 1rem;
+    .instruction-title {
+        margin: 0.625rem;
     }
 
-    .imagen-beneficios {
-        
-        height: 219px;
-        width: 100%;
-        background-size: cover;
-        background-position: right;
+    h2 {
+        font-size: 1.125rem;
+        line-height: 3.125rem;
+    }
+
+    h3 {
+        font-size: 0.9375rem;
+        line-height: 1.8125rem;
+    }
+
+    p {
+        font-size: 0.6875rem;
+        line-height: 0.9375rem;
+    }
+
+    .btn-collection, .btn-philosophy, .btn-more-info {
+        font-size: 0.625rem;
+        line-height: 0.9375rem;
+        padding: 0.5rem 1rem;
     }
 }
