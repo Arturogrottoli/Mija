@@ -50,7 +50,9 @@ p {
     padding: 0 1rem;
 }
 
-.btn-collection, .btn-philosophy, .btn-more-info {
+.btn-collection,
+.btn-philosophy,
+.btn-more-info {
     color: white;
     background-color: black;
     font-family: 'Montserrat', sans-serif;
@@ -63,12 +65,15 @@ p {
     padding: 1rem 2rem;
 }
 
-.btn-collection:hover, .btn-philosophy:hover, .btn-more-info:hover {
+.btn-collection:hover,
+.btn-philosophy:hover,
+.btn-more-info:hover {
     opacity: 0.8;
 }
 
 .instruction-card {
-    width: 34.5rem;
+    width: 100%;
+    max-width: 34.5rem;
     height: 27.125rem;
     object-fit: cover;
 }
@@ -114,6 +119,33 @@ p {
     transform: scale(1.1);
 }
 
+.page-hero {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-hero--collection {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("imgs/coleccion1.jpeg");
+    height: 40rem;
+}
+
+.page-hero--about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imgs/nosotras3.jpeg");
+    height: 26rem;
+}
+
+.page-hero__title {
+    color: white;
+    font-weight: 600;
+    font-size: 3.125rem;
+    line-height: 4.375rem;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .hero-title {
         font-size: 1.4375rem;
@@ -142,6 +174,19 @@ p {
         margin: 0.625rem;
     }
 
+    .page-hero--collection {
+        height: 11.375rem;
+    }
+
+    .page-hero--about {
+        height: 13.6875rem;
+    }
+
+    .page-hero__title {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+
     h2 {
         font-size: 1.125rem;
         line-height: 3.125rem;
@@ -157,7 +202,9 @@ p {
         line-height: 0.9375rem;
     }
 
-    .btn-collection, .btn-philosophy, .btn-more-info {
+    .btn-collection,
+    .btn-philosophy,
+    .btn-more-info {
         font-size: 0.625rem;
         line-height: 0.9375rem;
         padding: 0.5rem 1rem;

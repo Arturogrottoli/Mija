@@ -29,23 +29,22 @@
 </head>
 
 <body class="bg-white font-playfair">
-
-    <nav class="bg-white">
+    <nav class="bg-white border-b border-gray-100">
         <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between py-4">
-                <a class="text-xl font-bold text-black" href="index.html">HOME</a>
-                <button id="mobileMenuButton" class="lg:hidden focus:outline-none" type="button" aria-label="Toggle navigation">
+            <div class="flex items-center justify-between py-4 relative">
+                <a class="text-xl font-bold text-black hover:opacity-70 transition" href="index.html">HOME</a>
+                <button id="mobileMenuButton" class="lg:hidden p-2 rounded focus:outline-none focus:ring" type="button" aria-label="Abrir menú">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
-                <div id="navbarMenu" class="hidden lg:flex lg:items-center lg:space-x-12 lg:flex-1 lg:justify-center">
-                    <ul class="flex flex-col lg:flex-row lg:space-x-12 lg:space-y-0 space-y-4 lg:items-center lg:w-full lg:justify-center">
+                <div id="navbarMenu" class="hidden flex flex-col lg:flex lg:flex-row lg:items-center lg:flex-1 lg:justify-center lg:gap-x-12 absolute lg:relative top-full left-0 right-0 lg:top-auto bg-white lg:bg-transparent border-b lg:border-b-0 border-gray-100 py-4 lg:py-0 px-4 lg:px-0">
+                    <ul class="flex flex-col lg:flex-row lg:gap-x-12 lg:gap-y-0 gap-y-4 lg:items-center">
                         <li><a class="text-black font-bold text-lg hover:opacity-70 transition" href="pages/coleccion.html">Colección</a></li>
                         <li><a class="text-black font-bold text-lg hover:opacity-70 transition" href="pages/nosotras.html">Nosotras</a></li>
                         <li><a class="text-black font-bold text-lg hover:opacity-70 transition" href="pages/contacto.html">Contacto</a></li>
                     </ul>
-                    <div class="flex space-x-3 lg:ml-auto">
-                        <a href="https://www.instagram.com/mijaproductos/" target="_blank" class="text-black opacity-40 hover:opacity-70 transition"><i class="fab fa-instagram text-2xl"></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=5491159519542&text=hola!%20dejamé%20tu%20mensaje." target="_blank" class="text-black opacity-40 hover:opacity-70 transition"><i class="fab fa-whatsapp text-2xl"></i></a>
+                    <div class="flex gap-x-3 lg:ml-auto mt-4 lg:mt-0">
+                        <a href="https://www.instagram.com/mijaproductos/" target="_blank" rel="noopener" class="text-black opacity-40 hover:opacity-70 transition"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=5491159519542&text=hola!%20dejamé%20tu%20mensaje." target="_blank" rel="noopener" class="text-black opacity-40 hover:opacity-70 transition"><i class="fab fa-whatsapp text-2xl"></i></a>
                     </div>
                 </div>
             </div>
@@ -100,7 +99,7 @@
                     <h3>Diseño</h3>
                     <p class="text-sm md:text-base">Cuidadosamente elegimos el material para que el contacto con la piel de tu bebé sea una experiencia agradable</p>
                 </div>
-                <div class="feature-item w-full md:w-[372px]">
+                <div class="w-full md:w-[372px]">
                     <i class="fa fa-check-circle-o text-4xl mb-4" aria-hidden="true"></i>
                     <h3>Seguridad</h3>
                     <p class="text-sm md:text-base">Nuestros productos tienen trabas y ganchos con el fin de que la seguridad no se convierta en un problema</p>
@@ -109,14 +108,14 @@
         </section>
 
         <section class="w-full px-4">
-            <div class="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-0">
+            <div class="flex flex-col lg:flex-row lg:justify-center gap-8 lg:gap-12 max-w-6xl mx-auto">
 
                 <div class="lg:w-1/2">
-                    <a href=""><img src="imgs/instrucciones.jpeg" alt="Slogan1" class="instruction-card"></a>
+                    <a href="#" onclick="return false" aria-label="Instrucciones de uso (próximamente)"><img src="imgs/instrucciones.jpeg" alt="Instrucciones de uso" class="instruction-card"></a>
                     <h3 class="instruction-title">Instrucciones de uso</h3>
                 </div>
                 <div class="lg:w-1/2">
-                    <a href="pages/beneficios.html"><img src="imgs/beneficios.jpeg" alt="Slogan2" class="instruction-card"></a>
+                    <a href="pages/beneficios.html"><img src="imgs/beneficios.jpeg" alt="Beneficios del porteo" class="instruction-card"></a>
                     <h3 class="instruction-title"><a class="text-black hover:opacity-70 transition" href="pages/beneficios.html">Beneficios del porteo</a></h3>
                 </div>
             </div>
@@ -129,7 +128,7 @@
                     <p class="w-full md:w-[535px]">El concepto principal de la marca es lograr un producto que permita mantener a tu bebe cerca de la piel y corazon en un porta bebes.</p>
                 </div>
                 <div>
-                    <a href="pages/nosotras.html#filoso"><button class="btn-philosophy">Ver más</button></a>
+                    <a href="pages/nosotras.html#filosofia"><button class="btn-philosophy" type="button">Ver más</button></a>
                 </div>
             </div>
             <div>
@@ -141,40 +140,33 @@
 
     </main>
 
-    <footer class="bg-black text-white flex flex-col md:flex-row justify-around py-8 px-4">
-        <div class="w-full md:w-[220px] mb-6 md:mb-0">
-            <h2 class="text-xl md:text-2xl">HOME</h2>
-            <p class="text-sm">Pick up point: CABA, Palermo y zona Norte, Escobar.</p>
-            <p class="text-sm">Envios a todo el país, consultar paises limitrofes.</p>
-        </div>
-        <div class="mb-6 md:mb-0">
-            <h2 class="text-xl md:text-2xl">Mija</h2>
-            <p><a class="text-white hover:opacity-70 transition" href="pages/coleccion.html">Colección</a></p>
-            <p><a class="text-white hover:opacity-70 transition" href="pages/nosotras.html">Nosotras</a></p>
-            <p><a class="text-white hover:opacity-70 transition" href="pages/nosotras.html#filoso">Filosofia</a></p>
-        </div>
-        <div>
-            <h2 class="text-xl md:text-2xl">Contacto</h2>
-            <p class="text-sm"><i class="fas fa-phone"></i> +54 9 11 5951 9542</p>
-            <p class="text-sm"><i class="far fa-envelope"></i> mijaproductos@gmail.com</p>
-            <p class="text-sm">
-                <a href="https://api.whatsapp.com/send?phone=5491159519542&text=hola!%20dejamé%20tu%20mensaje." target="_blank" class="text-white hover:opacity-70 transition"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.instagram.com/mijaproductos/" target="_blank" class="text-white hover:opacity-70 transition"><i class="fab fa-instagram"></i></a>
-            </p>
+    <footer class="bg-black text-white">
+        <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row md:justify-around gap-8">
+            <div class="md:w-56">
+                <h2 class="text-xl md:text-2xl mb-2">HOME</h2>
+                <p class="text-sm">Pick up point: CABA, Palermo y zona Norte, Escobar.</p>
+                <p class="text-sm">Envíos a todo el país; consultar países limítrofes.</p>
+            </div>
+            <div>
+                <h2 class="text-xl md:text-2xl mb-2">Mija</h2>
+                <p><a class="text-white hover:opacity-70 transition" href="pages/coleccion.html">Colección</a></p>
+                <p><a class="text-white hover:opacity-70 transition" href="pages/nosotras.html">Nosotras</a></p>
+                <p><a class="text-white hover:opacity-70 transition" href="pages/nosotras.html#filosofia">Filosofía</a></p>
+            </div>
+            <div>
+                <h2 class="text-xl md:text-2xl mb-2">Contacto</h2>
+                <p class="text-sm"><i class="fas fa-phone mr-1"></i> +54 9 11 5951 9542</p>
+                <p class="text-sm"><i class="far fa-envelope mr-1"></i> mijaproductos@gmail.com</p>
+                <p class="text-sm mt-1">
+                    <a href="https://api.whatsapp.com/send?phone=5491159519542&text=hola!%20dejamé%20tu%20mensaje." target="_blank" rel="noopener" class="text-white hover:opacity-70 transition"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/mijaproductos/" target="_blank" rel="noopener" class="text-white hover:opacity-70 transition ml-2"><i class="fab fa-instagram"></i></a>
+                </p>
+            </div>
         </div>
     </footer>
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="./app.js"></script>
-    <script>
-        const mobileMenuButton = document.getElementById('mobileMenuButton');
-        const navbarMenu = document.getElementById('navbarMenu');
-        if (mobileMenuButton && navbarMenu) {
-            mobileMenuButton.addEventListener('click', () => {
-                navbarMenu.classList.toggle('hidden');
-            });
-        }
-    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>

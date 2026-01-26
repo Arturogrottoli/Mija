@@ -3,143 +3,124 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mija</title>
-
-    <!--Fuentes e iconos-->
+    <title>Contacto · Mija</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a7187feedf.js" crossorigin="anonymous"></script>
-
-
-    <!-- Estilo CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a7187feedf.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        playfair: ['Playfair Display', 'serif'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
-
-    <!-- NavBar -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">HOME</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/coleccion.html">Colección</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/nosotras.html">Nosotras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <a href="https://www.instagram.com/mijaproductos/" target=”_blank”><i class="fab fa-instagram"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=5491159519542&amp;text-hola!&nbsp;dejamé&nbsp;tu&nbsp;mensaje." target=”_blank”><i class="fab fa-whatsapp"></i></a>
-                </form>
+<body class="bg-white font-playfair">
+    <nav class="bg-white border-b border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4 relative">
+                <a class="text-xl font-bold text-black hover:opacity-70 transition" href="../index.html">HOME</a>
+                <button id="mobileMenuButton" class="lg:hidden p-2 rounded focus:outline-none focus:ring" type="button" aria-label="Abrir menú">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <div id="navbarMenu" class="hidden flex flex-col lg:flex lg:flex-row lg:items-center lg:flex-1 lg:justify-center lg:gap-x-12 absolute lg:relative top-full left-0 right-0 lg:top-auto bg-white lg:bg-transparent border-b lg:border-b-0 border-gray-100 py-4 lg:py-0 px-4 lg:px-0">
+                    <ul class="flex flex-col lg:flex-row lg:gap-x-12 lg:gap-y-0 gap-y-4 lg:items-center">
+                        <li><a class="text-black font-bold text-lg hover:opacity-70 transition" href="coleccion.html">Colección</a></li>
+                        <li><a class="text-black font-bold text-lg hover:opacity-70 transition" href="nosotras.html">Nosotras</a></li>
+                        <li><a class="text-black font-bold text-lg hover:opacity-70 transition" href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <div class="flex gap-x-3 lg:ml-auto mt-4 lg:mt-0">
+                        <a href="https://www.instagram.com/mijaproductos/" target="_blank" rel="noopener" class="text-black opacity-40 hover:opacity-70 transition"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=5491159519542&text=hola!%20dejamé%20tu%20mensaje." target="_blank" rel="noopener" class="text-black opacity-40 hover:opacity-70 transition"><i class="fab fa-whatsapp text-2xl"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
 
+    <main class="container mx-auto px-4 py-12 md:py-16">
+        <h2 class="mb-10 text-center md:text-left">Contactanos</h2>
 
-    <!-- Body -->
-
-    <main>
-
-        <h2 class="smartNo contacto">Contactanos</h2>
-        <div class="contenedor-contacto">
-            <div>
-                <div>
-                    <h3 class="mensaje">Dejanos un mensaje</h3>
-                </div>
-                <div class="form-div">
-                    <form class="my-form col-md-8 col-lg-6 col-sm-10 col-sx-12 w-75" id="formularioContacto" action="https://formspree.io/f/moqybkle" method="POST">
-                        <div class="form-group">
-                            <label for="Nombre"></label>
-                            <input id="nombre" type="text" class="form-control" placeholder="Nombre">
-                        </div>
-                        <div class="form-group">
-                            <label for="email"></label>
-                            <input id="email" type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="form-group w-75">
-                            <label for="message" class="formu"></label>
-                            <textarea id="message" name="message" id="message" class="tamanioMensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        </div>
-                        <div class="div-botonFormContactoSmart">
-                            <button id="btnCrearSuscriptor" type="submit" class="button-form btn-dark">Enviar</button>
-                        </div>
-                    </form>
-                </div>
+        <div class="flex flex-col lg:flex-row lg:gap-12 gap-10">
+            <div class="flex-1 max-w-xl">
+                <h3 class="mb-6 font-montserrat font-semibold text-xl">Dejanos un mensaje</h3>
+                <form id="formularioContacto" class="flex flex-col gap-4" action="https://formspree.io/f/moqybkle" method="POST">
+                    <label for="nombre" class="sr-only">Nombre</label>
+                    <input id="nombre" name="name" type="text" placeholder="Nombre" required
+                        class="w-full border border-gray-400 px-4 py-3 font-montserrat text-base focus:outline-none focus:ring-2 focus:ring-black">
+                    <label for="email" class="sr-only">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Email" required
+                        class="w-full border border-gray-400 px-4 py-3 font-montserrat text-base focus:outline-none focus:ring-2 focus:ring-black">
+                    <label for="message" class="sr-only">Mensaje</label>
+                    <textarea id="message" name="message" cols="30" rows="8" placeholder="Mensaje" required
+                        class="w-full border border-gray-400 px-4 py-3 font-montserrat text-base resize-y focus:outline-none focus:ring-2 focus:ring-black"></textarea>
+                    <button type="submit" class="btn-more-info w-fit">Enviar</button>
+                </form>
             </div>
 
-            <div>
-                <div class="div-infoSmart">
-                    <p><i class="fa fa-map-marker"></i> Pick up point: CABA, Palermo y zona norte. Escobar.</p>
-                    <p><i class="fas fa-phone"></i> +54 9 11 5951 9542</p>
-                    <p><i class="far fa-envelope"></i> mijaproductos@gmail.com</p>
+            <div class="flex-1">
+                <div class="space-y-4 mb-6">
+                    <p class="flex items-center gap-2"><i class="fa fa-map-marker-alt text-black opacity-60"></i> Pick up point: CABA, Palermo y zona norte, Escobar.</p>
+                    <p class="flex items-center gap-2"><i class="fas fa-phone text-black opacity-60"></i> +54 9 11 5951 9542</p>
+                    <p class="flex items-center gap-2"><i class="far fa-envelope text-black opacity-60"></i> mijaproductos@gmail.com</p>
                 </div>
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28660.598911248228!2d-58.43815912745522!3d-34.57290552789639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20CABA!5e0!3m2!1ses!2sar!4v1634831709883!5m2!1ses!2sar"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
+                <div class="w-full overflow-hidden rounded">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28660.598911248228!2d-58.43815912745522!3d-34.57290552789639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20CABA!5e0!3m2!1ses!2sar!4v1634831709883!5m2!1ses!2sar"
+                        width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" title="Mapa Palermo CABA"></iframe>
                 </div>
             </div>
         </div>
 
-        <div class="redes-contacto">
-            <p class="texto-contacto"><b>También podés contactarnos por nuestras redes sociales</b></p>
-            <a href="https://api.whatsapp.com/send?phone=5491159519542&amp;text-hola!&nbsp;dejamé&nbsp;tu&nbsp;mensaje." target=”_blank”><i class="fab fa-whatsapp"></i></a><i href="https://www.instagram.com/mijaproductos/" class="fa fa-instagram" aria-hidden="true"></i>
+        <div class="mt-12 text-center">
+            <p class="font-semibold mb-4">También podés contactarnos por nuestras redes sociales</p>
+            <div class="flex justify-center gap-4">
+                <a href="https://api.whatsapp.com/send?phone=5491159519542&text=hola!%20dejamé%20tu%20mensaje." target="_blank" rel="noopener" class="text-black opacity-60 hover:opacity-100 transition"><i class="fab fa-whatsapp text-3xl"></i></a>
+                <a href="https://www.instagram.com/mijaproductos/" target="_blank" rel="noopener" class="text-black opacity-60 hover:opacity-100 transition"><i class="fab fa-instagram text-3xl"></i></a>
+            </div>
         </div>
 
-
-
-
-        <!--Scroll button-->
-        <button class="scroll-top-btn hidden">&#11014;</button>
-
+        <button type="button" class="scroll-top-button opacity-0 invisible transition-all duration-300" aria-label="Volver arriba">&#11014;</button>
     </main>
 
-    <!-- Footer -->
-
-    <footer class="container-fluid">
-        <div class="div-footer">
-            <h2>HOME</h2>
-            <p>Pick up point: CABA, Palermo y zona Norte, Escobar.</p>
-            <p>Envios a todo el país, consultar paises limitrofes.</p>
-        </div>
-        <div>
-            <h2>Mija</h2>
-            <p><a class="sinDecoracion" href="../pages/coleccion.html">Colección</a></p>
-            <p><a class="sinDecoracion" href="../pages/nosotras.html">Nosotras</a></p>
-            <p><a class="sinDecoracion" href="../pages/nosotras.html#filoso">Filosofia</a></p>
-        </div>
-        <div>
-            <h2>Contacto</h2>
-            <p><i class="fas fa-phone"></i> +54 9 11 5951 9542</p>
-            <p><i class="far fa-envelope"></i> mijaproductos@gmail.com</p>
-            <p><a href="https://api.whatsapp.com/send?phone=54091159519542&amp;text-hola!&nbsp;dejamé&nbsp;tu&nbsp;mensaje." target=”_blank”><i style="color:white" class="fab fa-whatsapp"></i></a>
-                <a href="https://www.instagram.com/mijaproductos/" target=”_blank”><i style="color:white" class="fab fa-instagram"></i></a>
-            </p>
+    <footer class="bg-black text-white mt-16">
+        <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row md:justify-around gap-8">
+            <div class="md:w-56">
+                <h2 class="text-xl md:text-2xl mb-2">HOME</h2>
+                <p class="text-sm">Pick up point: CABA, Palermo y zona Norte, Escobar.</p>
+                <p class="text-sm">Envíos a todo el país; consultar países limítrofes.</p>
+            </div>
+            <div>
+                <h2 class="text-xl md:text-2xl mb-2">Mija</h2>
+                <p><a class="text-white hover:opacity-70 transition" href="coleccion.html">Colección</a></p>
+                <p><a class="text-white hover:opacity-70 transition" href="nosotras.html">Nosotras</a></p>
+                <p><a class="text-white hover:opacity-70 transition" href="nosotras.html#filosofia">Filosofía</a></p>
+            </div>
+            <div>
+                <h2 class="text-xl md:text-2xl mb-2">Contacto</h2>
+                <p class="text-sm"><i class="fas fa-phone mr-1"></i> +54 9 11 5951 9542</p>
+                <p class="text-sm"><i class="far fa-envelope mr-1"></i> mijaproductos@gmail.com</p>
+                <p class="text-sm mt-1">
+                    <a href="https://api.whatsapp.com/send?phone=5491159519542&text=hola!%20dejamé%20tu%20mensaje." target="_blank" rel="noopener" class="text-white hover:opacity-70 transition"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/mijaproductos/" target="_blank" rel="noopener" class="text-white hover:opacity-70 transition ml-2"><i class="fab fa-instagram"></i></a>
+                </p>
+            </div>
         </div>
     </footer>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="./contacto.js"></script>
+    <script src="../app.js"></script>
+    <script src="contact.js"></script>
 </body>
 
 </html>
